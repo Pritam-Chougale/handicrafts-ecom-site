@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/* using flexbox properties */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 70px;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: grey;
+    font-family: cursive;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 18px;
+    color: darkblue;
+    font-weight: bold;
+    padding: 20px 20px;
+}
+/*creating a circle*/
+.round{
+    width: 400px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    z-index: -1;
+}
+/* to style the main container i.e. above the fold content */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+.left-side{
+    flex-basis: 60%;
+    max-width: 450px;
+}
+.right-side{
+    flex-basis: 40%;
+    text-align: right;
+}
+.right-side img{
+    width: 80%;
+}
+.left-side h1{
+    font-size: 50px;;
+}
+.left-side span{
+    color: grey;
+}
+.p-header{
+    margin-top: 10px;
+}
+.search{
+    margin-top: 30px;
+}
+.search input{
+    padding: 10px;
+    width: 76%;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
+}
+.search button{
+    padding: 10px;
+    color: white;
+    background: #7f8fa6;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.counter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+#welcome{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    z-index: -1;
+}
+/* featured section */
+#featured{
+    padding: 100px 50px;
+}
+.f-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.f-left-col{
+    flex-basis: 50%;
+}
+.f-left-col img{
+    width: 80%;
+}
+.f-right-col{
+    flex-basis: 50%;
+    max-width: 500px;
+}
